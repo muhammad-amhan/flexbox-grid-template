@@ -1,0 +1,339 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'open-sans', arial;
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: #eee;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, button, textarea {
+    outline: 0;
+}
+
+.container {
+    margin: auto;
+    height: 100%;
+}
+
+img {
+    width: 40%;
+}
+
+.primary-text {
+    color: #56a79a;
+}
+
+/* Header */
+.main-header {
+    border-bottom: 1px solid #56a79a;
+    color: #000;
+    background: linear-gradient(to bottom, #000 0%, #eee 20%);
+}
+
+/* Main Navbar */
+
+.main-nav ul {
+    text-transform: uppercase;
+}
+
+.main-nav ul li {
+    display: inline;
+    padding-right: 18px;
+}
+
+.main-header ul li a {
+    color: #333;
+}
+
+.main-nav ul li.current a, .main-nav ul li a:hover {
+    color: #56a79a;
+    border-bottom: 3px solid #56a79a;
+    padding-bottom: 3px;
+}
+
+/* Showcase */
+
+.showcase {
+    background: url('../images/showcase.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    border-bottom: 3px solid #56a79a;
+    margin-bottom: 20px;
+}
+
+.showcase .row {
+    height: 600px;
+}
+
+.showcase h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.showcase p {
+    color: #ccc;
+    margin: 0;
+}
+
+.showcase .showcase-content {
+    padding: 20px;
+    color: #fff;
+    border-radius: 100px;
+    background-color: #000;
+    opacity: .8;
+}  
+
+
+/* Features */
+
+.features .container {
+    margin: 30px auto;
+}
+
+.features h1,
+.subheader h1 {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 0 10px #000;
+}
+
+.subheader h1 {
+    margin-top: 30px;
+}
+
+.features .fa {
+    font-size: 60px; 
+    color: #56a79a;
+}
+
+
+/* Info */
+
+.info {
+    background: url('../images/offer2.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    padding: 30px 0 10px;
+}
+
+.info .android .fa {
+    font-size: 200px;
+    padding: 20px;
+    background-color: #FEB020;
+    border-radius: 100px;
+}
+
+.info h2 {
+    color: #FEB020;
+    text-transform: uppercase;
+}
+
+.info ul {
+    color: #fff;
+    padding: 0;
+}
+
+.info ul li {
+    line-height: 2;
+}
+
+
+/* Company */
+
+.company {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0 20px;
+    border-top: 2px solid #FEB020;
+}
+
+.company h4 {
+    text-transform: uppercase;
+    color: #FEB020;
+    margin: 10px 0 5px;
+}
+
+.company .row ul {
+    padding: 0;
+}
+
+.company .company-info {
+    margin: 12px 0;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+.company .company-info:first-child {
+    border-left: none;
+}
+
+.company .company-info input[type="email"] {
+    padding: 8px;
+    color: #444;
+}
+
+.company .company-info button[name="subscribe"] {
+    padding: 8px;
+    color: #000;
+    font-weight: bold;
+    background-color: #FEB020;
+    border: 2px solid #FEB020;
+    transition: .2s;
+}
+
+.company .company-info button[name="subscribe"]:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.main-footer {
+    background: #ccc;
+    border-top: 1px solid #000;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Inner pages */
+
+#page {
+    margin: -10px 0 60px;
+}
+
+/* services */
+
+.services ul {
+    margin-right: 25px;
+}
+
+.services ul li {
+    padding: 10px;
+    color: #333;
+    box-shadow: 5px 5px 12px 1px #000
+}
+
+.services ul li:nth-child(odd) {
+    color: #fff;
+    background-color: #333;
+}
+
+.services ul li:nth-child(even) {
+    background-color: #98D8CE;
+}
+
+/* Contact */
+
+.contact form {
+    margin: auto;
+    background-color: #333;
+    width: 350px;
+    text-align: left;
+    box-shadow: 5px 5px 12px 3px #000;
+}
+
+.contact form h2 {
+    padding-top: 20px;
+    margin: -5px auto;
+    color: #eee;
+    text-align: center;
+}
+
+.contact form input::placeholder, 
+.contact form textarea::placeholder {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.contact form input, .contact textarea {
+    margin: 20px 15px;
+    padding: 8px;
+    color: #fff;
+    width: 90%;
+    max-width: 90%;
+    font-family: 'open-sans', arial;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #FEB020;
+}
+
+.contact form button[name="submit-btn"] {
+    margin: 5px 15px 15px;
+    padding: 10px;
+    width: 90%;
+    background-color: #FEB020;
+    border: 2px solid #FEB020;
+    font-weight: bold;
+}
+
+.contact form button[name="submit-btn"]:hover {
+    background-color: transparent;
+    border: 2px solid #FEB020;
+    color: #fff;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media(max-width: 800px) {
+    .showcase h1 {
+        font-size: 30px;
+    }
+
+    .main-header h1 {
+        margin-bottom: -5px;
+    }
+}
+
+@media(max-width: 1020px) {
+    .company .company-info button[name="subscribe"],
+    .company .company-info input[type="email"] {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .features h1,
+    .subheader h1 {
+        width: 40%;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 500px) {
+    .showcase .showcase-content {
+        padding: 20px 30px;
+    }
+
+    .showcase h1 {
+        font-size: 25px;
+    }
+
+    .main-nav ul {
+        font-size: 14px;
+    }
+
+    .contact form input, .contact textarea {
+        font-size: 13px;
+    }
+}
